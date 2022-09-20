@@ -23,7 +23,6 @@ public class Exam {
     private LinkedList<Student> students = new LinkedList<>();
     Map<Integer,Grade> grades = new HashMap<>();
 
-
     public Exam(int examnumber, LocalDate examdate ,Subject subject) {
         this.setExamnumber(examnumber);
         this.setExamdate(examdate);

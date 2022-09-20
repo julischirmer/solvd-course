@@ -7,7 +7,6 @@ public class User {
     private String username;
     private String password;
     private UserAccess userAccess;
-
     public String getUsername() {
         return username;
     }

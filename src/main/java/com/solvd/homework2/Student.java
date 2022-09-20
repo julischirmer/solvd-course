@@ -29,7 +29,6 @@ public class Student extends Person implements ICountryResidence {
         super.setName(name);
         setAverageMark(averagemark);
     }
-
     public Student(int dni, String name, String lastname, String mail, LocalDate birthday) throws InvalidMailException {
         this.setDni(dni);
         this.setName(name);

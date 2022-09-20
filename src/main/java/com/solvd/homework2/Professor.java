@@ -43,7 +43,6 @@ public final class Professor extends Person {
         System.out.println("This is an abstract method of Professor");
     }
 
-
     @Override
     public String toString() {
         return "\nProfessor{" +

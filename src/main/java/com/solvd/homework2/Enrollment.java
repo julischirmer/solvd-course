@@ -13,7 +13,6 @@ public class Enrollment {
     private Course course;
 
     private int count = 0;
-
     public Enrollment(int id, Student student, Course course) {
         setIdEnrollment(id);
         setStudent(student);

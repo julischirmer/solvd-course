@@ -16,9 +16,9 @@ import java.util.*;
 public class Main {
 
     private static Logger logger = LogManager.getLogger(com.solvd.homework2.Main.class.getName());
-    private static File myfile = new File ("D:\\SolvdCourse\\Hometask\\src\\main\\resources\\text.txt");
-    private static File myfile2 = new File ("D:\\SolvdCourse\\Hometask\\src\\main\\resources\\text2.txt");
-    private  static File fileResult = new File ("D:\\SolvdCourse\\Hometask\\src\\main\\resources\\result.txt");
+    private static File myfile = new File ("src/main/resources/text.txt");
+    private static File myfile2 = new File ("src/main/resources/text2.txt");
+    private  static File fileResult = new File ("src/main/resources/result.txt");
 
     public static void main(String[] args) throws IOException {
 

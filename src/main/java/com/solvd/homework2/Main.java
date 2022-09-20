@@ -97,8 +97,6 @@ public class Main {
         harvard.getGradesPerStudent(111);
         harvard.getGradesPerStudent(112);
 
-
-
         // Subjects for student enroll
         logger.info("Subjects for student are: " + harvard.getSubjectsPerStudent(111));
 

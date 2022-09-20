@@ -6,7 +6,6 @@ public enum DepartmentType {
     ECONOMIC("Economic"),
     ENGINEERING("Engineering"),
     LAW ("Law");
-
     final private String department;
 
     DepartmentType(String Department) {

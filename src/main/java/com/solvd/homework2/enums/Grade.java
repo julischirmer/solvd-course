@@ -6,7 +6,6 @@ public enum Grade {
     MERIT("Merit"),
     PASS("Pass"),
     FAIL("Fail");
-
     private final String grade;
 
     Grade(String grade){

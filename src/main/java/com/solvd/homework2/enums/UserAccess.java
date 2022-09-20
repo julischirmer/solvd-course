@@ -4,7 +4,6 @@ public enum UserAccess {
     ADMIN("Admin"),
     STUDENT("Student"),
     PROFESSOR("Professor");
-
     private final String access;
 
     UserAccess(String access){

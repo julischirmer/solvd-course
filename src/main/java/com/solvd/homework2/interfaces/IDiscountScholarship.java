@@ -5,4 +5,5 @@ import com.solvd.homework2.functionalInterfaces.IDiscount;
 
 public interface IDiscountScholarship {
     void DiscountScholarship(Student student, IDiscount disc);
+
 }

@@ -6,5 +6,4 @@ public interface ICalculateTotalCost {
 
     double getTotalCost(Student student);
 
-
 }

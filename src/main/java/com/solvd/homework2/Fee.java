@@ -19,7 +19,6 @@ public final class Fee {
     private Student student;
     private double costPerMonth;
     private Course course;
-
     public Fee(Student student, int month, boolean isPay, Course course) {
         try {
             this.setStudent(student);

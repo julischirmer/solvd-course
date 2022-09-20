@@ -61,7 +61,6 @@ public class Course {
     public double getCost() {
         return cost;
     }
-
     public void setCost(double cost) throws InvalidCourseCostException {
         if (cost < 0) {
             throw new InvalidCourseCostException("The cost can't be negative");

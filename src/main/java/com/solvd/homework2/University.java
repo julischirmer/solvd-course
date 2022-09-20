@@ -76,7 +76,6 @@ public class University implements ICountryResidence, ICalculateTotalCost, IDisc
         }
         return null;
     }
-
     public String getSpecialtyPerStudent(int dni){
         for(Student student:students){
             if (student.getDni()==dni){

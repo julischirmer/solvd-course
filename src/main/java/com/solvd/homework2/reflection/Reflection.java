@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Reflection {
-
     public static Logger logger = LogManager.getLogger(Reflection.class.getName());
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
 

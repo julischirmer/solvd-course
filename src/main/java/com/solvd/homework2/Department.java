@@ -5,7 +5,6 @@ import com.solvd.homework2.enums.DepartmentType;
 public class Department {
     private int idDepartment;
     private DepartmentType typeDepartment;
-
     public void setIdDepartment(int idDepartment) {
         this.idDepartment = idDepartment;
     }

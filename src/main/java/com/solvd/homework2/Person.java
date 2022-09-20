@@ -19,7 +19,6 @@ public abstract class Person {
     public int getDni() {
         return dni;
     }
-
     public void setDni(int dni) {
         this.dni = dni;
     }

@@ -18,8 +18,6 @@ public class Subject {
         this.setIdSubject(idSubject);
         this.setName(name);
         this.specialty = specialty;
-        // this.setProfessors(professors);
-
     }
 
 

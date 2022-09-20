@@ -57,7 +57,7 @@ public abstract class Person {
     }
 
     public void setBirthday(LocalDate birthday) throws AgeRestriction {
-        int age = Period.between(birthday, LocalDate.now()).getYears();;
+        int age = Period.between(birthday, LocalDate.now()).getYears();
         if (age >= 18) {
             this.birthday = birthday;
         } else {
@@ -65,7 +65,7 @@ public abstract class Person {
         }
     }
 
-    public abstract void getDegree();
+    public abstract int getAge();
 
     @Override
     public String toString() {

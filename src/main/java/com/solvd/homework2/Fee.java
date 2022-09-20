@@ -17,7 +17,6 @@ public final class Fee {
     private int month; // 0 January - 11 December
     private boolean isPay; // True = Pay the month fee & false = don't pay the month fee
     private Student student;
-    private double costPerMonth;
     private Course course;
     public Fee(Student student, int month, boolean isPay, Course course) {
         try {
@@ -108,9 +107,6 @@ public final class Fee {
         this.student = student;
     }
 
-    public void setCostPerMonth(){
-
-    }
 
     @Override
     public String toString() {
@@ -119,7 +115,6 @@ public final class Fee {
                 ", month=" + month +
                 ", isPay=" + isPay +
                 ", student=" + student +
-                ", costPerMonth=" + costPerMonth +
                 ", course=" + course +
                 '}';
     }

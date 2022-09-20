@@ -2,8 +2,9 @@ package com.solvd.homework2;
 
 import com.solvd.homework2.exceptions.InvalidSalary;
 import com.solvd.homework2.functionalInterfaces.ISalaryBonus;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import java.time.LocalDate;
+import java.time.Period;
 
 public final class Professor extends Person {
     private double salary;
@@ -32,15 +33,15 @@ public final class Professor extends Person {
 
     }
 
-    public void increaseSalary(double bonus,ISalaryBonus<Double> increase){
+    public void increaseSalary(double bonus, ISalaryBonus<Double> increase){
         increase.increaseSalary(bonus);
     }
 
 
-
     @Override
-    public void getDegree() {
-        System.out.println("This is an abstract method of Professor");
+    public int getAge() {
+        int age = Period.between(this.getBirthday(), LocalDate.now()).getYears();
+        return age;
     }
 
     @Override

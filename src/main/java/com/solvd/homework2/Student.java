@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.InputMismatchException;
 import java.util.LinkedList;
 import java.util.Objects;
@@ -24,9 +25,10 @@ public class Student extends Person implements ICountryResidence {
         this.averagemark = averageMark;
     }
 
-    public Student(int dni, String name, double averagemark){
+    public Student(int dni, String name, String lastName , double averagemark){
         super.setDni(dni);
         super.setName(name);
+        super.setLastname(lastName);
         setAverageMark(averagemark);
     }
     public Student(int dni, String name, String lastname, String mail, LocalDate birthday) throws InvalidMailException {
@@ -94,8 +96,9 @@ public class Student extends Person implements ICountryResidence {
     }
 
     @Override
-    public void getDegree() {
-        System.out.println("The student doesn't have a degree");
+    public int getAge() {
+        int age = Period.between(this.getBirthday(), LocalDate.now()).getYears();
+        return age;
     }
 
     @Override

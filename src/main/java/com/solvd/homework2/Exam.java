@@ -65,19 +65,6 @@ public class Exam {
         return students;
     }
 
-
-/*    public void setGrade(Student student, Subject subject ,Grade grade){
-        if(this.students.contains(student) && this.subject.equals(subject)){
-            this.grade = grade;
-        } else {
-            logger.info("The student does not exist in the exam");
-        }
-    }*/
-
- /*   public Grade getGrade(){
-        return this.grade;
-    }*/
-
     Consumer<Professor> addProfessor = (Professor) -> {
         logger.info(Professor);
         professors.add(Professor);
@@ -104,7 +91,7 @@ public class Exam {
 
     public void countStudents(){
         long count = students.stream().count();
-        logger.info("The quantity of students enroll for the exam are: " + count);
+        logger.info("The quantity of students enroll for the exam: "+ subject.getName() +" are: " + count);
     }
 
     public void findName(List<String> studentsnames, String name){

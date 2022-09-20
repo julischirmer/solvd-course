@@ -27,10 +27,6 @@ public class Course {
 
     private CourseAvailability courseAvailability;
 
-    public Course() {
-
-    }
-
     public Course(int idcourse, double price, String name, Specialty specialty) throws InvalidCourseCostException {
         this.setIdCourse(idcourse);
         this.setName(name);
@@ -54,9 +50,6 @@ public class Course {
         return subjects;
     }
 
-    public void setSubjects(LinkedList<Subject> subjects) {
-        this.subjects = subjects;
-    }
 
     public double getCost() {
         return cost;
@@ -86,9 +79,6 @@ public class Course {
         return students;
     }
 
-    public void setStudents(LinkedList<Student> students) {
-        this.students = students;
-    }
 
     public void addStudent(Student student){
         students.add(student);
@@ -161,24 +151,6 @@ public class Course {
 
     }
 
-    public void getCourseCost(LinkedList<Course> courses) {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            logger.info("Insert course ID");
-            Course course = new Course(scanner.nextInt());
-            if (courses.contains(course)) {
-                Course coursefind = courses.get(courses.indexOf(course));
-                logger.info("The course: " + coursefind.getName() + " has the cost: u$d " + coursefind.getCost());
-            } else {
-                logger.info("The course doesn't exist");
-            }
-        } catch (InputMismatchException e) {
-            logger.error("The course id must be a number");
-            logger.info("The program keeps working...");
-        } finally {
-            scanner.close();
-        }
-    }
 
     public void getCourseSubjects(LinkedList<Course> courses) {
         Scanner scanner = new Scanner(System.in);
